@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Credit Card Numbers</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="font-size: 2em;">Credit Card Numbers</h1>
+
+    <h2>American Express</h2>
+    <p>American Express cards typically start with 34 or 37 and have 15 digits. Valid formats include 3712-345678-12345, 3412 345678 12345, and 371234567812345. These numbers are crucial for processing transactions and verifying card authenticity.</p>
+    <p>However, not all similar-looking numbers are valid American Express cards. For instance, <span style="color: blue;">4111111111111111, 5500000000000004, and 361449635398432</span> are not valid American Express numbers. It's important to distinguish between valid and invalid formats to prevent errors in payment processing.</p>
+
+    <h2>Mastercard</h2>
+    <p>Mastercard numbers usually begin with 51-55 or 2221-2720 and contain 16 digits. Examples of valid Mastercard numbers include 5555555555554444, 2221000000000009, and 5105-1051-0510-5100. These numbers play a vital role in secure online and offline transactions.</p>
+    <p>It's crucial to recognize invalid Mastercard formats. For example, <span style="color: blue;">4111111111111111, 371449635398431, and 555555555555444</span> are not valid Mastercard numbers. Proper validation helps prevent fraudulent transactions and ensures smooth payment processing.</p>
+
+    <h2>Visa</h2>
+    <p>Visa card numbers start with 4 and are 16 digits long (13 digits for older cards). Valid Visa numbers include 4111111111111111, 4012-8888-8888-1881, and 4222 2222 2222 2121. These numbers are essential for identifying Visa cards in various payment systems.</p>
+    <p>Not all 16-digit numbers starting with 4 are valid Visa cards. For instance, <span style="color: blue;">411111111111111, 4111-1111-1111-11, and 41234567890123456</span> are invalid formats. Proper validation is crucial for maintaining payment security and accuracy.</p>
+
+    <h2>Diners Club</h2>
+    <p>Diners Club card numbers typically start with 30, 36, or 38 and are 14 digits long. Valid formats include 300420688846-75, 30366806859700, and 3864 5881.3882.84. These unique numbers help distinguish Diners Club cards in payment processing systems.</p>
+    <p>It's important to note that not all similar numbers are valid Diners Club cards. For example, <span style="color: blue;">3056930902590, 3056-9309-0259-0, and 3056 9309 0259 044</span> are invalid formats. Proper validation ensures accurate transaction processing for Diners Club cards.</p>
+
+    <h2>JCB</h2>
+    <p>JCB card numbers start with 35 and are 16 digits long. Valid JCB numbers include 3530111333300000, 3566-0020-2036-0505, and 3588 0000 0000 0009. These numbers are crucial for identifying and processing JCB card transactions globally.</p>
+    <p>Not all 16-digit numbers starting with 35 are valid JCB cards. For instance, <span style="color: blue;">353011133300000, 3530-1113-3330-00, and 3412345678901234</span> are invalid formats. Proper validation of JCB numbers is essential for secure and accurate payment processing.</p>
+
+    <h2>Discover</h2>
+    <p>Discover card numbers begin with 6011, 644-649, or 65 and are 16 digits long. Valid Discover numbers include 6011111111111117, 6011-0009-9013-9424, and 6445 0000 0000 0000. These unique identifiers ensure proper processing of Discover card transactions.</p>
+    <p>It's crucial to distinguish between valid and invalid Discover card formats. For example, <span style="color: blue;">601111111111111, 6011-1111-1111-11, and 6111234567890123</span> are not valid Discover numbers. Accurate validation helps prevent errors and ensures smooth payment processing for Discover cards.</p>
+  </body>
+</html>
