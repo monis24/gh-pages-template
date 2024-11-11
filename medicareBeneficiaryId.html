@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Medicare Beneficiary Numbers</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="font-size: 2em;">Medicare Beneficiary Numbers</h1>
+
+    <h2>Positive Test Cases</h2>
+
+    <p>Medicare Beneficiary Identifiers (MBIs) are crucial for identifying individuals enrolled in Medicare. These Medicare numbers follow a specific format, consisting of 11 characters divided into three groups. Valid examples include <span style="color: blue;">1AB2-CD3-EF45</span> and <span style="color: blue;">9HJ1-NP9-RT99</span>. These unique identifiers are essential for processing Medicare claims and managing beneficiary information.</p>
+
+    <p>The Medicare Beneficiary Number format allows for various combinations of letters and numbers while maintaining a consistent structure. Additional valid examples include <span style="color: blue;">5RT7-YA8-BC12</span>, <span style="color: blue;">3DE4-FG5-HJ67</span>, <span style="color: blue;">7KL8-MN9-PQ23</span>, <span style="color: blue;">4EF5-GH6-JK34</span>, <span style="color: blue;">8LM9-NP1-QR78</span>, and <span style="color: blue;">1TU2-VW3-XY91</span>. These MBIs demonstrate the range of possible combinations while adhering to the required format for Medicare identification numbers.</p>
+
+    <h2>Negative Test Cases</h2>
+
+    <p style="color: red;">The following examples should not be redacted:</p>
+
+    <p>Incorrect or invalid Medicare Beneficiary Number formats can cause issues in healthcare administration and claims processing. Examples of such invalid formats include <span style="color: blue;">0AB2-CD3-EF45</span> (which starts with 0), <span style="color: blue;">1IJ2-CD3-EF45</span> (containing 'I'), and <span style="color: blue;">1AB0-CD3-EF45</span> (with 0 in the wrong position). These invalid numbers would be rejected by Medicare systems and could lead to delays in processing or care.</p>
+
+    <p>Similarly, malformed or incomplete Medicare Beneficiary Numbers can lead to errors in healthcare services. Instances like <span style="color: blue;">1AB2-CO3-EF45</span> (containing 'O'), <span style="color: blue;">1AB2-CD3-EF00</span> (ending in 00), and <span style="color: blue;">1AB2-CD3-EFGH</span> (containing non-numeric characters in the last group) are invalid. More examples of incorrect MBIs include <span style="color: blue;">1AB2CD3-EF45</span> (missing hyphen), <span style="color: blue;">1AB2-CD3EF45</span> (missing hyphen), <span style="color: blue;">1AB2-CD3-EF45-</span> (extra hyphen), and <span style="color: blue;">IAB2-CD3-EF45</span> (starting with 'I'), which further illustrate potential issues with non-standard Medicare Beneficiary Number representations in healthcare contexts.</p>
+  </body>
+</html>
