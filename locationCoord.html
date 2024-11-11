@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Location Coordinates</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="font-size: 2em;">Location Coordinates</h1>
+
+    <h2>Positive Test Cases</h2>
+
+    <p>GPS coordinates are essential for precise location identification. Common formats include latitude and longitude pairs such as <span style="color: blue;">40.7128° N, 74.0060° W</span> and <span style="color: blue;">51.5074N, 0.1278W</span>. These coordinates are crucial for geolocation services and mapping applications, providing exact positions on the Earth's surface.</p>
+
+    <p>Coordinate systems can represent locations in various formats. For example, <span style="color: blue;">35.6762, 139.6503</span> and <span style="color: blue;">+40.7128, -74.0060</span> use decimal degrees without directional indicators. Other valid representations include <span style="color: blue;">0 N, 0 E</span> (the prime meridian), <span style="color: blue;">45.4215° N, 75.6972° W</span>, <span style="color: blue;">S 89.9999, W 179.9999</span> (near the South Pole), and <span style="color: blue;">37° N, 115° W</span>. These geopoints demonstrate the flexibility of coordinate notation while maintaining accuracy.</p>
+
+    <h2>Negative Test Cases</h2>
+
+    <p style="color: red;">The following examples should not be redacted:</p>
+
+    <p>Incorrect or invalid coordinate formats can cause issues in mapping and navigation systems. Examples of such invalid formats include <span style="color: blue;">90.1234° W, 180.5678° N</span> and <span style="color: blue;">North 40°, East 74°</span>, which do not conform to standard latitude and longitude ranges or formats. These invalid coordinates would be rejected by most geolocation systems.</p>
+
+    <p>Similarly, non-standard or incomplete coordinate representations can lead to errors in location services. Instances like <span style="color: blue;">N90', E180'</span> and <span style="color: blue;">45.4215E°, 75.6972S°</span> are invalid. More complex examples such as <span style="color: blue;">37°14'06.4"N, 115°48'40.1"W, 1000m</span>, <span style="color: blue;">South 12.3456, East 78.9012</span>, and <span style="color: blue;">51°30'26.0"N, 0°07'39.0"W, London</span> further illustrate potential issues with non-standard coordinate representations in geographic contexts.</p>
+  </body>
+</html>
