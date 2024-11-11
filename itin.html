@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Individual Tax Identification Number</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="font-size: 2em;">Individual Tax Identification Number</h1>
+
+    <h2>Formatted ITIN (High Confidence Level)</h2>
+
+    <h3>Positive Test Cases</h3>
+
+    <p>Individual Tax Identification Numbers (ITINs) are crucial for tax purposes, especially for individuals who are not eligible for Social Security Numbers. Properly formatted ITINs follow a specific pattern. For example, <span style="color: blue;">900-70-1234</span> and <span style="color: blue;">911 80 5678</span> are valid ITINs, demonstrating the use of either hyphens or spaces as separators. Other valid examples include <span style="color: blue;">922-79-9012</span> and <span style="color: blue;">933 81 3456</span>, which maintain the correct format of three digits, followed by two digits, and then four digits.</p>
+
+    <p>ITINs always begin with the number 9, which distinguishes them from Social Security Numbers. Additional examples of correctly formatted ITINs are <span style="color: blue;">944-72-7890</span>, <span style="color: blue;">955 83 2345</span>, <span style="color: blue;">966-74-6789</span>, <span style="color: blue;">977 85 0123</span>, <span style="color: blue;">988-76-4567</span>, and <span style="color: blue;">999 89 8901</span>. These all follow the required pattern and start with a 9, ensuring their validity as ITINs.</p>
+
+    <h3>Negative Test Cases</h3>
+
+    <p style="color: red;">The following examples should not be redacted:</p>
+
+    <p>While ITINs have a specific format, it's important to recognize invalid patterns. For instance, <span style="color: blue;">899-70-1234</span> is invalid because ITINs must start with 9. Similarly, <span style="color: blue;">900-69-5678</span> is incorrect as the second group of digits in an ITIN must be between 70 and 88. <span style="color: blue;">911 90 9012</span> is also invalid due to the second group exceeding 88.</p>
+
+    <p>Other examples of incorrectly formatted ITINs include <span style="color: blue;">922-79-345</span>, which has too few digits in the last group, and <span style="color: blue;">933 81 34567</span>, which has too many. <span style="color: blue;">955-831-2345</span> uses an incorrect grouping of digits, while <span style="color: blue;">966 7411-6789</span> has an improper separator placement. <span style="color: blue;">977-85-012A</span> contains a letter, which is not allowed in ITINs, and <span style="color: blue;">999-89-8901-12</span> has an extra group of digits, making it invalid.</p>
+
+    <h2>Unformatted ITIN (Medium/Low Confidence Level)</h2>
+
+    <h3>Positive Test Cases</h3>
+
+    <p>Unformatted Individual Tax Identification Numbers (ITINs) present a unique challenge in identification and validation. These numbers may appear without the typical separators or with inconsistent formatting. For example, <span style="color: blue;">900-70-1234</span> and <span style="color: blue;">91180 5678</span> are valid ITINs, showing different separator styles. <span style="color: blue;">922799012</span> is also a valid ITIN, despite lacking any separators. Similarly, <span style="color: blue;">933-81-3456</span> and <span style="color: blue;">94472 7890</span> demonstrate the variety in formatting that can occur with ITINs.</p>
+
+    <p>Even with inconsistent formatting, valid ITINs always begin with 9 and follow the general structure of nine digits. Additional examples include <span style="color: blue;">955832345</span>, which has no separators, <span style="color: blue;">966-74-6789</span> with standard hyphen separators, <span style="color: blue;">97785 0123</span> using a single space, <span style="color: blue;">988764567</span> without any separators, and <span style="color: blue;">999-89-8901</span> with the traditional format. These examples highlight the importance of flexible validation processes for ITINs, especially when dealing with potentially unformatted or inconsistently formatted numbers.</p>
+
+    <h3>Negative Test Cases</h3>
+
+    <p style="color: red;">The following examples should not be redacted:</p>
+
+    <p>Identifying invalid ITINs becomes more challenging when dealing with unformatted or inconsistently formatted numbers. However, certain patterns remain invalid regardless of formatting. For instance, <span style="color: blue;">899-70-1234</span> is invalid because ITINs must start with 9. <span style="color: blue;">900-69-5678</span> is incorrect as the second group of digits in an ITIN must be between 70 and 88. Similarly, <span style="color: blue;">911 90 9012</span> is invalid due to the second group exceeding 88.</p>
+
+    <p>Other examples of invalid ITINs include <span style="color: blue;">922-79-345</span>, which has too few digits overall, and <span style="color: blue;">933 81 34567</span>, which has too many. <span style="color: blue;">955-831-2345</span> uses an incorrect grouping of digits, even if the separators were removed. <span style="color: blue;">966 7411-6789</span> contains an extra digit in the middle group. <span style="color: blue;">977-85-012A</span> includes a letter, which is not allowed in ITINs, and <span style="color: blue;">999-89-8901-12</span> has additional digits beyond the required nine. These examples emphasize the importance of thorough validation processes, especially when dealing with potentially unformatted ITINs.</p>
+
+  </body>
+</html>
