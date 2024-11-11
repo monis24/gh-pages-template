@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Health Insurance Claim Number</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="font-size: 2em;">Health Insurance Claim Number</h1>
+
+    <h2>Formatted HIC Number</h2>
+
+    <h3>Positive Test Cases</h3>
+
+    <p>Health Insurance Claim (HIC) numbers are crucial identifiers in the healthcare system. When formatted, these numbers typically consist of a combination of letters and numbers, separated by hyphens. For example, <span style="color: blue;">ABC-123-45-6789-XYZ</span> and <span style="color: blue;">DEF456-78-9012-123</span> are valid formatted HIC numbers. The structure can vary, but it generally includes alphabetic prefixes and suffixes with numerical segments in between.</p>
+
+    <p>Other examples of correctly formatted HIC numbers include <span style="color: blue;">GH-789-01-2345-AB</span>, <span style="color: blue;">I-012-34-5678-9</span>, and <span style="color: blue;">JKL345-67-8901-Z</span>. These demonstrate the flexibility in the format while maintaining the essential elements. Similarly, <span style="color: blue;">MN-678-90-1234-5A</span>, <span style="color: blue;">OPQ901-23-4567-BC</span>, <span style="color: blue;">R-234-56-7890-DE</span>, <span style="color: blue;">STU567-89-0123-4</span>, and <span style="color: blue;">VW-890-12-3456-7</span> are all valid formatted HIC numbers, showcasing different combinations of letters, numbers, and hyphen placements.</p>
+
+    <h3>Negative Test Cases</h3>
+
+    <p style="color: red;">The following examples should not be redacted:</p>
+
+    <p>While HIC numbers can vary in format, certain patterns are invalid. For instance, <span style="color: blue;">ABCD-123-45-6789-XYZ</span> is invalid due to the four-letter prefix. Similarly, <span style="color: blue;">DEF-4567-89-0123-45</span> has an incorrect grouping of numbers. <span style="color: blue;">GH-78-90-1234-AB</span> and <span style="color: blue;">I-012-345-6789-0</span> show incorrect number groupings, making them invalid HIC numbers.</p>
+
+    <p>Other examples of incorrectly formatted HIC numbers include <span style="color: blue;">JKL3456-78-9012-Z</span> with too many digits in one group, <span style="color: blue;">MN-678-90-12345-6A</span> with an extra digit, <span style="color: blue;">OPQU-901-23-4567-BCD</span> with too many letters in the prefix and suffix, <span style="color: blue;">R2345-56-7890-DE</span> lacking a hyphen after the prefix, <span style="color: blue;">STU-567-89-0123</span> missing the suffix, and <span style="color: blue;">VWXY-890-12-3456-78A</span> with an incorrect structure overall.</p>
+
+    <h2>Unformatted HIC Number</h2>
+
+    <h3>Positive Test Cases</h3>
+
+    <p>Unformatted Health Insurance Claim (HIC) numbers present a unique challenge in identification and validation. These numbers appear as a continuous string of letters and numbers without hyphens. For example, <span style="color: blue;">ABC123456789XYZ</span> and <span style="color: blue;">DEF456789012123</span> are valid unformatted HIC numbers. Despite the lack of hyphens, they still maintain the essential elements of alphabetic prefixes and suffixes with numerical segments in between.</p>
+
+    <p>Additional examples of correctly unformatted HIC numbers include <span style="color: blue;">GH789012345AB</span>, <span style="color: blue;">I012345678909</span>, and <span style="color: blue;">JKL345678901Z</span>. These demonstrate the variety in length and composition of HIC numbers in their unformatted state. Similarly, <span style="color: blue;">MN678901234A5</span>, <span style="color: blue;">OPQ901234567BC</span>, <span style="color: blue;">R2345567890DE</span>, <span style="color: blue;">STU567890123F</span>, and <span style="color: blue;">VW890123456G7</span> are all valid unformatted HIC numbers, showcasing different combinations of letters and numbers without separators.</p>
+
+    <h3>Negative Test Cases</h3>
+
+    <p style="color: red;">The following examples should not be redacted:</p>
+
+    <p>Identifying invalid unformatted HIC numbers can be more challenging due to the absence of hyphens. However, certain patterns remain invalid. For instance, <span style="color: blue;">ABCD123456789XYZ</span> is invalid due to the four-letter prefix. Similarly, <span style="color: blue;">DEFG45678901234</span> has too many letters in the prefix. <span style="color: blue;">GH78901234AB</span> is too short to be a valid HIC number, while <span style="color: blue;">IJKL0123456789</span> has too many letters at the beginning.</p>
+
+    <p>Other examples of incorrect unformatted HIC numbers include <span style="color: blue;">OPQU901234567BCD</span> with too many letters in the prefix and suffix, <span style="color: blue;">R23456789DE</span> which is too short, <span style="color: blue;">STU567890123</span> missing a suffix, and <span style="color: blue;">VWXY890123456G78</span> with an incorrect structure overall. The absence of formatting makes these invalid HIC numbers potentially more difficult to identify at a glance, emphasizing the importance of careful validation processes.</p>
+
+  </body>
+</html>
