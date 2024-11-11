@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Employer Identification Numbers</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="font-size: 2em;">Employer Identification Numbers</h1>
+
+    <h2>Formatted EIN (High Confidence Level)</h2>
+
+    <h3>Positive Test Cases</h3>
+
+    <p>Employer Identification Numbers (EINs) are crucial identifiers for businesses in the United States. When formatted, these nine-digit numbers are typically presented with a hyphen separating the first two digits from the remaining seven. For example, <span style="color: blue;">01-1234567</span> and <span style="color: blue;">15-9876543</span> are valid formatted EINs. The first two digits, known as the EIN prefix, correspond to specific IRS districts or business entity types.</p>
+
+    <p>Other examples of correctly formatted EINs include <span style="color: blue;">27-0000000</span>, <span style="color: blue;">35-1111111</span>, and <span style="color: blue;">48-2222222</span>. These demonstrate the range of possible prefix numbers. Similarly, <span style="color: blue;">59-3333333</span>, <span style="color: blue;">68-4444444</span>, <span style="color: blue;">77-5555555</span>, <span style="color: blue;">90-6666666</span>, and <span style="color: blue;">95-7777777</span> are all valid formatted EINs, showcasing different prefix combinations and the consistent use of the hyphen separator.</p>
+
+    <h3>Negative Test Cases</h3>
+
+    <p style="color: red;">The following examples should not be redacted:</p>
+
+    <p>While the format of EINs is straightforward, it's important to recognize invalid patterns. For instance, <span style="color: blue;">00-1234567</span> and <span style="color: blue;">08-9876543</span> are invalid because EIN prefixes do not start with 00 or 08. Similarly, <span style="color: blue;">17-0000000</span> and <span style="color: blue;">28-1111111</span> are not valid EINs as 17 and 28 are not used as EIN prefixes.</p>
+
+    <p>Other examples of incorrectly formatted EINs include <span style="color: blue;">18-2222222</span>, <span style="color: blue;">49-3333333</span>, <span style="color: blue;">69-4444444</span>, <span style="color: blue;">78-5555555</span>, <span style="color: blue;">97-6666666</span>, and <span style="color: blue;">96-7777777</span>. These numbers use prefix combinations that are not assigned by the IRS, making them invalid EINs despite their correct formatting with a hyphen.</p>
+
+    <h2>Unformatted EIN (Medium/Low Confidence Level)</h2>
+
+    <h3>Positive Test Cases</h3>
+
+    <p>Unformatted Employer Identification Numbers (EINs) present a unique challenge in identification and validation. These nine-digit numbers appear without the typical hyphen separator. For example, <span style="color: blue;">011234567</span> and <span style="color: blue;">159876543</span> are valid unformatted EINs. Despite the lack of a hyphen, the first two digits still represent the EIN prefix, corresponding to specific IRS districts or business entity types.</p>
+
+    <p>Additional examples of correctly unformatted EINs include <span style="color: blue;">270000000</span>, <span style="color: blue;">351111111</span>, and <span style="color: blue;">482222222</span>. These demonstrate the range of possible prefix numbers in their unformatted state. Similarly, <span style="color: blue;">593333333</span>, <span style="color: blue;">684444444</span>, <span style="color: blue;">775555555</span>, <span style="color: blue;">906666666</span>, and <span style="color: blue;">957777777</span> are all valid unformatted EINs, showcasing different prefix combinations without the hyphen separator.</p>
+
+    <h3>Negative Test Cases</h3>
+
+    <p style="color: red;">The following examples should not be redacted:</p>
+
+    <p>Identifying invalid unformatted EINs can be more challenging due to the absence of the hyphen separator. However, the same rules for valid prefixes apply. For instance, <span style="color: blue;">001234567</span> and <span style="color: blue;">089876543</span> are invalid because EIN prefixes do not start with 00 or 08, even in unformatted form. Similarly, <span style="color: blue;">170000000</span> and <span style="color: blue;">281111111</span> are not valid EINs as 17 and 28 are not used as EIN prefixes.</p>
+
+    <p>Other examples of incorrect unformatted EINs include <span style="color: blue;">182222222</span>, <span style="color: blue;">493333333</span>, <span style="color: blue;">694444444</span>, <span style="color: blue;">785555555</span>, <span style="color: blue;">976666666</span>, and <span style="color: blue;">967777777</span>. These numbers use prefix combinations that are not assigned by the IRS, making them invalid EINs despite their correct nine-digit structure. The absence of formatting makes these invalid EINs potentially more difficult to identify at a glance.</p>
+
+  </body>
+</html>
