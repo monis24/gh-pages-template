@@ -9,9 +9,6 @@
         var copyText = document.getElementById(elementId);
         var textToCopy = copyText.textContent || copyText.innerText;
         navigator.clipboard.writeText(textToCopy)
-          .then(function() {
-            alert('Copied to clipboard');
-          })
           .catch(function(err) {
             alert('Could not copy text: ', err);
           });
@@ -32,7 +29,8 @@
 
     <h3>Negative Test Cases</h3>
     <p style="color: red;">The following examples should not be redacted:</p>
-    <!-- Negative Test Cases remain unchanged -->
+    <p>Not all 15-digit numbers starting with 34 or 37 are valid American Express card numbers. Examples of invalid formats include <span style="color: blue;">4111111111111111, 5500000000000004, 361449635398432, and 37144963539843</span>. These numbers either have incorrect starting digits or an incorrect number of digits for an American Express card.</p>
+    <p>Other examples of invalid American Express card numbers include <span style="color: blue;">3714-496353-9843, 347-87654-321098, 347901234567, 34712345678901234, and B47123456789012</span>. These numbers demonstrate various errors such as incorrect digit grouping, too few or too many digits, or the inclusion of non-numeric characters, all of which would cause the number to be rejected in a validation process.</p>
 
     <!-- Mastercard -->
     <h2>Mastercard</h2>
@@ -44,7 +42,9 @@
     <button onclick="copyToClipboard('mastercard-positive-2')">Copy</button>
 
     <h3>Negative Test Cases</h3>
-    <!-- Negative Test Cases remain unchanged -->
+    <p style="color: red;">The following examples should not be redacted:</p>
+    <p>Not all 16-digit numbers starting with 51-55 or 2221-2720 are valid Mastercard numbers. Examples of invalid formats include <span style="color: blue;">4111111111111111, 371449635398431, 555555555555444, and 5555-5555-5555-444</span>. These numbers either have incorrect starting digits or an incorrect number of digits for a Mastercard.</p>
+    <p>Other examples of invalid Mastercard numbers include <span style="color: blue;">2221-0000-0000-00, 5023456789012345, 2121234567890123, 5123-456-7890-1234, and 2720.1234.5678.901</span>. These numbers demonstrate various errors such as incorrect digit grouping, too few digits, or starting with digits outside the valid Mastercard ranges, all of which would cause the number to be rejected in a validation process.</p>
 
     <!-- Visa -->
     <h2>Visa</h2>
@@ -56,7 +56,9 @@
     <button onclick="copyToClipboard('visa-positive-2')">Copy</button>
 
     <h3>Negative Test Cases</h3>
-    <!-- Negative Test Cases remain unchanged -->
+    <p style="color: red;">The following examples should not be redacted:</p>
+    <p>Not all 16-digit numbers starting with 4 are valid Visa card numbers. Examples of invalid formats include <span style="color: blue;">5555555555554444, 371449635398431, 411111111111111, and 4111-1111-1111-11</span>. These numbers either have incorrect starting digits or an incorrect number of digits for a Visa card.</p>
+    <p>Other examples of invalid Visa numbers include <span style="color: blue;">4111 1111 1111 11, 5123456789012345, 3234567890123456, 4123-456-7890-1234, 41234567890123456, and 4123.4567.8901.23</span>. These numbers demonstrate various errors such as incorrect digit grouping, too few or too many digits, or starting with digits other than 4, all of which would cause the number to be rejected in a Visa card validation process.</p>
 
     <!-- Diners Club -->
     <h2>Diners Club</h2>
@@ -68,7 +70,9 @@
     <button onclick="copyToClipboard('diners-positive-2')">Copy</button>
 
     <h3>Negative Test Cases</h3>
-    <!-- Negative Test Cases remain unchanged -->
+    <p style="color: red;">The following examples should not be redacted:</p>
+    <p>Not all 14-digit numbers starting with 30, 36, or 38 are valid Diners Club card numbers. Examples of invalid formats include <span style="color: blue;">4111111111111111, 5555555555554444, 3056930902590, and 3056-9309-0259-0</span>. These numbers either have incorrect starting digits or an incorrect number of digits for a Diners Club card.</p>
+    <p>Other examples of invalid Diners Club numbers include <span style="color: blue;">3056 9309 0259 044, 200123456789012, 310123456789012345, 365432-1098-7654-321, 398765.4321.098, and 3A9876543210987</span>. These numbers demonstrate various errors such as incorrect digit grouping, too few or too many digits, starting with incorrect digits, or including non-numeric characters, all of which would cause the number to be rejected in a Diners Club card validation process.</p>
 
     <!-- JCB -->
     <h2>JCB</h2>
@@ -80,7 +84,9 @@
     <button onclick="copyToClipboard('jcb-positive-2')">Copy</button>
 
     <h3>Negative Test Cases</h3>
-    <!-- Negative Test Cases remain unchanged -->
+    <p style="color: red;">The following examples should not be redacted:</p>
+    <p>Not all 16-digit numbers starting with 35 are valid JCB card numbers. Examples of invalid formats include <span style="color: blue;">4111111111111111, 5555555555554444, 353011133300000, and 3530-1113-3330-00</span>. These numbers either have incorrect starting digits or an incorrect number of digits for a JCB card.</p>
+    <p>Other examples of invalid JCB numbers include <span style="color: blue;">3530 1113 3330 00, 3412345678901234, 3556-789-0123-4567, 355678901234567, 3578.9012.3456.789, and 3590 1234 5678 901A</span>. These numbers demonstrate various errors such as incorrect digit grouping, too few digits, starting with incorrect digits, or including non-numeric characters, all of which would cause the number to be rejected in a JCB card validation process.</p>
 
     <!-- Discover -->
     <h2>Discover</h2>
@@ -92,7 +98,8 @@
     <button onclick="copyToClipboard('discover-positive-2')">Copy</button>
 
     <h3>Negative Test Cases</h3>
-    <!-- Negative Test Cases remain unchanged -->
-
+    <p style="color: red;">The following examples should not be redacted:</p>
+    <p>Not all 16-digit numbers starting with 6 are valid Discover card numbers. Examples of invalid formats include <span style="color: blue;">4111111111111111, 5555555555554444, 601111111111111, and 6011-1111-1111-11</span>. These numbers either have incorrect starting digits or an incorrect number of digits for a Discover card.</p>
+    <p>Other examples of invalid Discover numbers include <span style="color: blue;">6011 1111 1111 11, 6111234567890123, 6434-5678-9012-3456, 6600.1234.5678.9012, 647890123456789, and 6523 4567 8901 234A</span>. These numbers demonstrate various errors such as incorrect digit grouping, too few digits, starting with incorrect digits, or including non-numeric characters, all of which would cause the number to be rejected in a Discover card validation process.</p>
   </body>
 </html>
