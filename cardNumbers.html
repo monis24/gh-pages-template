@@ -9,6 +9,9 @@
         var copyText = document.getElementById(elementId);
         var textToCopy = copyText.textContent || copyText.innerText;
         navigator.clipboard.writeText(textToCopy)
+          .then(function() {
+            alert('Copied to clipboard');
+          })
           .catch(function(err) {
             alert('Could not copy text: ', err);
           });
