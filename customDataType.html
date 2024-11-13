@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Regex Test: Workspaces Secure Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="font-size: 2em;">Regex Test: Workspaces Secure Browser</h1>
+
+  <p>This page is to test this regex <code>(?&lt;=\bworkspaces\s)secure(?=\sbrowser)(?!\stesting)(?<!aws\s)</code>, which utilizes:
+    <ul>
+      <li>a positive lookbehind to ensure the word "secure" is preceded by "workspaces",</li>
+      <li>a positive lookahead to ensure "secure" is followed by "browser",</li>
+      <li>a negative lookahead to ensure "secure" is not followed by "testing",</li>
+      <li>and a negative lookbehind to ensure "workspaces secure browser" is not following "aws".</li>
+    </ul>
+    So we will match and redact "workspaces secure browser" but only if it does not follow "aws" or is not followed by "testing".
+  </p>
+
+  <h2>Positive Test Cases</h2>
+
+  <p>In our organization, it's important to prioritize security, which is why we focus on providing a reliable <span style="color: blue;">workspaces secure browser</span> for all users. This setup ensures compliance and reduces risks associated with traditional browsing environments.</p>
+
+  <p>For example, the <span style="color: blue;">workspaces secure browser</span> setup allows safe access to critical applications without compromising user experience. This solution is particularly valuable in shared environments where <span style="color: blue;">workspaces secure browser</span> configurations are essential.</p>
+
+  <h3>Negative Test Cases</h3>
+
+  <p style="color: red;">The following examples should not be redacted:</p>
+
+  <p>When testing, ensure that the configuration doesn't inadvertently activate for phrases like <span style="color: red;">workspaces secure browser testing</span>. Additionally, make sure the regex excludes other similar patterns, such as <span style="color: red;">workspaces secure browser testing</span>, to avoid false positives.</p>
+
+  <p>Also, ensure the phrase does not match when it follows "aws", as in <span style="color: red;">aws workspaces secure browser</span>. This setup should only apply to configurations without the preceding "aws" keyword.</p>
+  
+</body>
+</html>
