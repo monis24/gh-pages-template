@@ -1,15 +1,38 @@
-<h1>National Provider Identification</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>National Provider Identifiers</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>National Provider Identifier Testing</h1>
+    
+    <!-- Valid Patterns - Should be Redacted -->
+    <h2>Confidence Level 3 (High)</h2>
+    <p>Formatted with keyword: National Provider Identifier: 1234567890</p>
+    <p>Formatted without keyword: 0123456789</p>
 
-<h2>Positive Test Cases</h2>
+    <h2>Confidence Level 2 (Medium)</h2>
+    <p>With keyword: NPI 9876543210</p>
+    <p>Without keyword: 0000000000</p>
 
-<p>The National Provider Identification (NPI) system uses a unique 10-digit identifier for healthcare providers. Valid NPIs include numbers such as <span style="color: blue;">1234567890</span>, <span style="color: blue;">0123456789</span>, and <span style="color: blue;">9876543210</span>. These identifiers are crucial for streamlining healthcare administrative processes and ensuring accurate provider recognition across various systems.</p>
+    <h2>Confidence Level 1 (Low)</h2>
+    <p>Any ten digits: 1111111111</p>
 
-<p>Other examples of valid National Provider Identification numbers include <span style="color: blue;">0000000000</span>, <span style="color: blue;">1111111111</span>, and <span style="color: blue;">9999999999</span>. Additionally, NPIs like <span style="color: blue;">1230456789</span>, <span style="color: blue;">9870123456</span>, <span style="color: blue;">5678901234</span>, and <span style="color: blue;">2468135790</span> are all considered valid within the healthcare provider registry system.</p>
+    <!-- Custom Pattern Tests -->
+    <h2>Custom Patterns</h2>
+    <p>Custom Pattern with SECRET keyword: SECRET: NPI12345678901234</p>
+    <p>Custom Pattern with KEY keyword: KEY: PROV98765432109876</p>
+    <p>Custom Pattern without keyword: MED12345678901234</p>
 
-<h2>Negative Test Cases</h2>
-
-<p style="color: red;">The following examples should not be redacted:</p>
-
-<p>Invalid National Provider Identification numbers can take various forms. For instance, <span style="color: blue;">123456789</span> is too short, while <span style="color: blue;">12345678901</span> is too long. Formatted numbers like <span style="color: blue;">123-456-7890</span>, <span style="color: blue;">123 456 7890</span>, and <span style="color: blue;">(123)4567890</span> are also invalid, as NPIs should not contain hyphens, spaces, or parentheses.</p>
-
-<p>Other examples of invalid NPIs include those containing letters or special characters, such as <span style="color: blue;">12345678a0</span>, <span style="color: blue;">1234567890a</span>, and <span style="color: blue;">a1234567890</span>. Numbers with decimal points or other punctuation, like <span style="color: blue;">123456789.</span> and <span style="color: blue;">12.34567890</span>, are also not valid National Provider Identification numbers and should not be recognized as such.</p>
+    <!-- Invalid Patterns - Should NOT be Redacted -->
+    <h2>Invalid Patterns</h2>
+    <p>Invalid Format 1: 123456789</p>
+    <p>Invalid Format 2: 12345678901</p>
+  </body>
+</html>
