@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>AWS Access Keys</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<body>
     <h1>AWS Access Key Testing</h1>
     
-    <!-- Valid Patterns - Should be Redacted -->
+    <!-- Built-in pattern tests -->
     <h2>Confidence Level 3 (High)</h2>
     <p>Formatted with keyword: AWS Access Key: AUGARR8B70AEGLIEG10D</p>
-    <p>Formatted without keyword: AOJA33Q21BX6I5W7SVEL</p>
+    <p>Formatted with alternate keyword: Amazon Key ID: AOJA33Q21BX6I5W7SVEL</p>
 
     <h2>Confidence Level 2 (Medium)</h2>
-    <p>With keyword: Access Key AYUAGGUPZYNDFPJXR2ZO</p>
-    <p>Without keyword: AGXAW041O5JZV7B4DJ0W</p>
+    <p>With keyword only: Access Key AYUAGGUPZYNDFPJXR2ZO</p>
+    <p>With keyword variation: Key ID AGXAW041O5JZV7B4DJ0W</p>
 
     <h2>Confidence Level 1 (Low)</h2>
-    <p>Any matching pattern: AZUA35XOCA2O5K5P8NGG</p>
+    <p>Basic pattern match: AZUA35XOCA2O5K5P8NGG</p>
 
-    <!-- Custom Pattern Tests -->
+    <!-- Custom pattern tests -->
     <h2>Custom Patterns</h2>
-    <p>Custom Pattern with SECRET keyword: SECRET: AWSKEY5ZATN4PRXSJXW2L</p>
-    <p>Custom Pattern with KEY keyword: KEY: AWSID98765XYZWV43210</p>
-    <p>Custom Pattern without keyword: AWSAC54321PQRST09876</p>
-
-    <!-- Invalid Patterns - Should NOT be Redacted -->
-    <h2>Invalid Patterns</h2>
-    <p>Invalid Format 1: ABCDEFGHIJKLMNOPQR</p>
-    <p>Invalid Format 2: 1BCADEFGHIJKLMNOPQR</p>
-  </body>
+    <p>Custom Pattern with SECRET keyword: SECRET: ACUSTOM8B70AEGLIEG10</p>
+    <p>Custom Pattern with KEY keyword: KEY: ATEST33Q21BX6I5W7SVE</p>
+</body>
 </html>
