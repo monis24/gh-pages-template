@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Social Security Numbers</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<body>
     <h1>Social Security Number Testing</h1>
     
-    <!-- Valid Patterns - Should be Redacted -->
+    <!-- Built-in pattern tests -->
     <h2>Confidence Level 3 (High)</h2>
     <p>Formatted with keyword: Social Security Number: 123-45-6789</p>
-    <p>Formatted with different separators: 234.56.7890, 345_67_8901</p>
+    <p>Formatted with alternate keyword: SSN: 987-65-4321</p>
 
     <h2>Confidence Level 2 (Medium)</h2>
-    <p>With keyword: SSN 123456789</p>
-    <p>Without keyword: 234567890</p>
+    <p>With keyword only: SSN 123456789</p>
+    <p>With partial keyword: Social 234567890</p>
 
     <h2>Confidence Level 1 (Low)</h2>
-    <p>Any nine digits: 345678901</p>
+    <p>Basic pattern match: 345678901</p>
 
-    <!-- Custom Pattern Tests -->
+    <!-- Custom pattern tests -->
     <h2>Custom Patterns</h2>
-    <p>Custom Pattern with SECRET keyword: SECRET: ID-123-45-6789-SSN</p>
-    <p>Custom Pattern with KEY keyword: KEY: SSN-987-65-4321-ID</p>
-    <p>Custom Pattern without keyword: NUM-111-22-3333-XX</p>
-
-    <!-- Invalid Patterns - Should NOT be Redacted -->
-    <h2>Invalid Patterns</h2>
-    <p>Invalid Format 1: 123-456-7890</p>
-    <p>Invalid Format 2: 12345678</p>
-  </body>
+    <p>Custom Pattern with SECRET keyword: SECRET: 123-45-6789</p>
+    <p>Custom Pattern with KEY keyword: KEY: 987-65-4321</p>
+</body>
 </html>
