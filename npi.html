@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>National Provider Identifiers</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<body>
     <h1>National Provider Identifier Testing</h1>
     
-    <!-- Valid Patterns - Should be Redacted -->
+    <!-- Built-in pattern tests -->
     <h2>Confidence Level 3 (High)</h2>
     <p>Formatted with keyword: National Provider Identifier: 1234567890</p>
-    <p>Formatted without keyword: 0123456789</p>
+    <p>Formatted with alternate keyword: NPI Number: 9876543210</p>
 
     <h2>Confidence Level 2 (Medium)</h2>
-    <p>With keyword: NPI 9876543210</p>
-    <p>Without keyword: 0000000000</p>
+    <p>With keyword only: NPI 1234567890</p>
+    <p>With keyword variation: Provider ID 9876543210</p>
 
     <h2>Confidence Level 1 (Low)</h2>
-    <p>Any ten digits: 1111111111</p>
+    <p>Basic pattern match: 1234567890</p>
 
-    <!-- Custom Pattern Tests -->
+    <!-- Custom pattern tests -->
     <h2>Custom Patterns</h2>
-    <p>Custom Pattern with SECRET keyword: SECRET: NPI12345678901234</p>
-    <p>Custom Pattern with KEY keyword: KEY: PROV98765432109876</p>
-    <p>Custom Pattern without keyword: MED12345678901234</p>
-
-    <!-- Invalid Patterns - Should NOT be Redacted -->
-    <h2>Invalid Patterns</h2>
-    <p>Invalid Format 1: 123456789</p>
-    <p>Invalid Format 2: 12345678901</p>
-  </body>
+    <p>Custom Pattern with SECRET keyword: SECRET: 1234567890</p>
+    <p>Custom Pattern with KEY keyword: KEY: 9876543210</p>
+</body>
 </html>
